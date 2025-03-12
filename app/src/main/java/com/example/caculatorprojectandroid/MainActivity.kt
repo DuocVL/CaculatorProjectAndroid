@@ -35,10 +35,10 @@ class MainActivity : ComponentActivity() {
         val button8 = findViewById<Button>(R.id.bt_8)
         val button9 = findViewById<Button>(R.id.bt_9)
 
-        var koToanTu = true
-        var duocsuaTv1 = true
-        var danhanbang = false
-        var ngoaiLe = false
+        var koToanTu = true //Xác định xem có được sửa toán tử ko
+        var duocsuaTv1 = true //Xác định được sửa TextView1
+        var danhanbang = false //Xác định đã nhấn "=" chưa
+        var ngoaiLe = false //Xác định có ngoại lệ chia cho 0 ko
 
         var toanHangClick = View.OnClickListener { view ->
             val button = view as Button
